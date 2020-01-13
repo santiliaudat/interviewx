@@ -4,7 +4,7 @@
  */
 
 import Head from 'next/head'
-import Questions from '../components/questions'
+import { Card } from 'antd'
 
 const Dashboard = props => {
   return (
@@ -12,7 +12,12 @@ const Dashboard = props => {
       <Head>
         <title>Lenguaje de programación</title>
       </Head>
-      <Questions title={"React"} data={props}/>
+      <Card title="TECHNICAL INTERVIEW QUESTIONS" style={{ textAlign: 'center'}}>
+        <div>
+          <h1>Let's fly</h1>
+          <img src="/static/rocket.gif" style={{ width: 300, height: "auto" }} />
+        </div>
+      </Card>
     </>
   )
 }
