@@ -7,7 +7,6 @@ const genExtra = (level) => (
 );
 
 const Detail = ({ questions }) => {
-  console.log(questions)
   const customPanelStyle = {
     borderRadius: 4,
     marginBottom: 24,

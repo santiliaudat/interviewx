@@ -38,14 +38,6 @@ class AppWrapper extends NextApp {
     }
 
     let collapsed = false
-    let protocol =
-      process.env.NODE_ENV === 'development' ? 'http://' : 'https://'
-    let redirect_uri = ''
-    if (ctx.req) {
-      redirect_uri = protocol + ctx.req.headers.host
-    } else {
-      redirect_uri = window.location.origin
-    }
 
     if (!ctx.req) {
       // client-side
@@ -61,7 +53,7 @@ class AppWrapper extends NextApp {
     const res = await axios.get('http://www.mocky.io/v2/5dea5ff5300000d23f2b0877')
     const categories = await res.data
 
-    return { pageProps, collapsed, redirect_uri, categories }
+    return { pageProps, collapsed, categories }
   }
 
   render() {

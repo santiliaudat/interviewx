@@ -44,7 +44,6 @@ class MyLayout extends React.Component {
   render() {
     const { collapsed, drawerVisible } = this.state
     const { children, categories } = this.props
-    console.log(this.props)
 
     return (
       <Layout

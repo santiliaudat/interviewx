@@ -12,8 +12,6 @@ export default ({ style, closeDrawer, categories }) => {
   const currentPath = router.route
   let selectedKeys = []
 
-  console.log(categories)
-
   for (let i = categories.length - 1; i >= 0; i--) {
     if (currentPath.includes(categories[i].name)) {
       selectedKeys = [categories[i].id]

@@ -4,7 +4,7 @@
  */
 
 import Head from 'next/head'
-import Questions from '../components/questions'
+import Questions from '../../components/questions'
 import axios from 'axios'
 
 const Dashboard = data => {
