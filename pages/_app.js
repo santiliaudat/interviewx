@@ -50,7 +50,7 @@ class AppWrapper extends NextApp {
     }
 
     //request to categories
-    const res = await axios.get('http://www.mocky.io/v2/5dea5ff5300000d23f2b0877')
+    const res = await axios.get('http://localhost:3000/api/categories')
     const categories = await res.data
 
     return { pageProps, collapsed, categories }

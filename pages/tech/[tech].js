@@ -21,7 +21,7 @@ const Dashboard = data => {
 Dashboard.getInitialProps = async function (context) {
   try {
     const { name } = context.query;
-    const res = await axios.get(`http://www.mocky.io/v2/5dea6657300000eb432b08ad?category.name=${name}`)
+    const res = await axios.get(`http://localhost:3000/api/questions`)
     const questions = await res.data
     return { 
       data: questions

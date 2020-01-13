@@ -4,7 +4,7 @@
  */
 
 import React from 'react'
-import '../static/index.css'
+import '../public/static/index.css'
 import { Layout } from 'antd'
 const { Content } = Layout
 import nookies from 'nookies'

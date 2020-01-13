@@ -9,11 +9,11 @@ import Link from 'next/link'
 
 export default ({ style, closeDrawer, categories }) => {
   const router = useRouter()
-  const currentPath = router.route
-  let selectedKeys = []
+  const currentPath = router.asPath
+  let selectedKeys = ["0"]
 
   for (let i = categories.length - 1; i >= 0; i--) {
-    if (currentPath.includes(categories[i].name)) {
+    if (currentPath.includes(categories[i].url)) {
       selectedKeys = [categories[i].id]
       break
     }
@@ -27,14 +27,21 @@ export default ({ style, closeDrawer, categories }) => {
       style={{ ...style, padding: '16px 0' }}
       onClick={({ key }) => {
         closeDrawer()
-        // router.push(key.name)
       }}
     >
+      <Menu.Item key="0">
+        <Link href="/" >
+          <a>
+            <Icon type="home" />
+            <span>Home</span>
+          </a>
+        </Link>
+      </Menu.Item>
       {categories.map(i =>
         <Menu.Item key={i.id}>
-          <Link  href="/[name]" as={`/tech?name=${i.name}`}>
+          <Link href={`/tech/${i.url}`}>
             <a>
-              <Icon type={i.icon} /> 
+              <Icon type={i.icon} />
               <span>{i.name}</span>
             </a>
           </Link>
