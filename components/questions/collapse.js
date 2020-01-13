@@ -24,7 +24,7 @@ const Detail = ({ questions }) => {
       {questions.data && questions.data.map(item => (
         <Panel header={item.question} key={item.id} style={customPanelStyle} extra={genExtra(item.level)}>
             <div  style={{ paddingLeft: 20 }}>
-              <ReactMarkdown source={item.response_html}/>
+              <ReactMarkdown source={item.response}/>
             </div>
         </Panel>
       ))}
