@@ -6,7 +6,7 @@
 import Head from 'next/head'
 import { Card } from 'antd'
 
-const Dashboard = props => {
+export default () => {
   return (
     <>
       <Head>
@@ -21,5 +21,3 @@ const Dashboard = props => {
     </>
   )
 }
-
-export default Dashboard
