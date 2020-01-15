@@ -1,10 +1,10 @@
 const categories = [
-  { "id": "1", "name": "react", "icon": "code", "url": "react" },
-  { "id": "2", "name": "react native", "icon": "code", "url": "react-native" },
-  { "id": "3", "name": "etl", "icon": "code", "url": "etl" },
-  { "id": "4", "name": "java", "icon": "code", "url": "java" },
-  { "id": "5", "name": "scala", "icon": "code", "url": "scala" },
-  { "id": "6", "name": "javascript", "icon": "code", "url": "javascript" }
+  { "name": "react", "icon": "code", "url": "react" },
+  { "name": "react native", "icon": "code", "url": "react-native" },
+  { "name": "etl", "icon": "code", "url": "etl" },
+  { "name": "java", "icon": "code", "url": "java" },
+  { "name": "scala", "icon": "code", "url": "scala" },
+  { "name": "javascript", "icon": "code", "url": "javascript" }
 ]
 
 const questions = [

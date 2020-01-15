@@ -5,7 +5,7 @@
 
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
-import TableStyled from '../../components/admin/Table'
+import TableStyled from '../../components/admin/categories/Table'
 import axios from 'axios'
 
 export default () => {
@@ -22,9 +22,9 @@ export default () => {
   return (
     <>
       <Head>
-        <title>Categorías</title>
+        <title>Categories</title>
       </Head>
-      <TableStyled title="Categorías" data={data} loading={data.length == 0}/>
+      <TableStyled title="Categories" data={data} loading={data.length == 0}/>
     </>
   )
 }
