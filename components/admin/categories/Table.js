@@ -23,7 +23,7 @@ const TableStyled = ({ title, data, loading }) => {
         :
         <>
           <Button type="primary" style={{ marginBottom: 16 }} onClick={() => setCreatingCategory(true)}>
-            Add a category
+            Add category
           </Button>
           <Table columns={columns} dataSource={data} size="small" loading={loading} rowKey={record => record.ref["@ref"].id}/>
         </>

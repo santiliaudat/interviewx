@@ -7,6 +7,7 @@ import Head from 'next/head'
 import Questions from '../../components/questions'
 import axios from 'axios'
 
+
 const Dashboard = data => {
   return (
     <>
@@ -20,8 +21,8 @@ const Dashboard = data => {
 
 Dashboard.getInitialProps = async function (context) {
   try {
-    const { name } = context.query;
-    const res = await axios.get(`http://localhost:3000/api/questions`)
+    const { tech } = context.query;
+    const res = await axios.get(`http://localhost:3000/api/questions/${tech}`)
     const questions = await res.data
     return { 
       data: questions

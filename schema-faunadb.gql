@@ -1,0 +1,18 @@
+type categories {
+  name: String!
+  icon: String!
+  url: String!
+}
+
+type questions {
+  question: String!
+  category: categories! @relation
+  is_practice: Boolean!
+  level: Int!
+  response: String!
+}
+
+type Query {
+  all_categories: [categories!]
+  all_questions: [questions!]
+}

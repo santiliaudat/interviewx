@@ -22,9 +22,9 @@ const Detail = ({ questions }) => {
       style={{ backgroundColor: '#f0f2f5' }}
     >
       {questions.data && questions.data.map(item => (
-        <Panel header={item.question} key={item.id} style={customPanelStyle} extra={genExtra(item.level)}>
+        <Panel header={item.data.question} key={item.ref["@ref"].id} style={customPanelStyle} extra={genExtra(item.data.level)}>
             <div  style={{ paddingLeft: 20 }}>
-              <ReactMarkdown source={item.response}/>
+              <ReactMarkdown source={item.data.response}/>
             </div>
         </Panel>
       ))}
