@@ -22,7 +22,7 @@
     "faunadb": "^2.10.2",
     "indexof": "0.0.1",
     "less": "^3.9.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "next": "^9.1.4",
     "nookies": "^2.0.8",
     "nprogress": "^0.2.0",
